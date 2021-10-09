@@ -1,0 +1,346 @@
+body {
+    font-family: 'Sora', sans-serif;
+    margin: 0;
+    overflow: none  ;
+}
+
+/* Header Class */
+.heady {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+/* Header Class */
+
+/* Parent Container - Navigation Area */
+#parCont {
+    position: -webkit-sticky;
+    position: sticky !important;
+    top: 0px;
+}
+/* Parent Container - Navigation Area */
+
+/* ======== Navigation Area ======== */
+#navbar {
+    margin-left: 0px;
+    display:block;
+    background-color: #145c8c;
+    height: 120px; 
+    border-bottom: solid 15px #155580;
+}
+
+#parCont::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Main Logo */
+.topLogo {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-left: 20px;
+}
+
+/* Navigation links on top left */
+.navList {
+    float: right;
+    list-style: none;
+    margin-top: 45px;
+    margin-right: 150px;
+}
+
+.navItem {
+    display: inline;
+    margin-top: 30px;
+}
+
+.navLink {
+    text-decoration: none;
+    margin-top: 30px;
+    margin-right: 20px;
+    color: white;
+}
+
+.navLink:hover {
+    color: #00b4d8;
+    transition: 1s;
+}
+/* Navigation links on top left */
+
+/* ======== Navigation Area ======== */
+
+
+/* ===== Main welcome image and motivational quote ===== */
+#introBox {
+    margin: 0px;
+    padding: 0px;
+}
+
+.imgIntro {
+    width: 100%;
+    height: 1080px;
+    display: block;
+    line-height: 0;
+    margin-right: 20px;
+}
+
+.imgIntro::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.quo1 {
+    position: absolute;
+    top: 470px;
+    font-size: 70px;
+    left: 170px;
+    padding: 10px;
+    color: white;
+    
+}
+
+.quo2 {
+    position: absolute;
+    top: 550px;
+    font-size: 70px;
+    left: 620px;
+    padding: 10px;
+    color: white;
+}
+/* ===== Main welcome image and motivational quote ===== */
+
+
+/* ==== Page Seperator ==== */
+.sep {
+    width: 100%;
+    height: 60px;
+    background-color: #145c8c;
+    margin: 0 0;
+    border: none;
+    overflow: none;
+}
+/* ==== Page Seperator ==== */
+
+
+/* ===== Gym Locator Search =====  */
+#gymLocate {
+    display: flex;
+    justify-content: center;
+    background-color: #155580;
+    padding: 40px 0;
+}
+
+#gymLocate > label {
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+}
+
+#gymLocate > input{
+    margin-left: 20px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#gymLocate > button {
+    margin-left: 20px;
+    background-color: #6c757d;
+    border: #6c757d  solid;
+    width: 150px;
+    border-radius: 5px;
+    font-family: 'Sora', sans-serif;
+    font-size: 15px;
+}
+
+#gymLocate > button:hover {
+    background-color: #00b4d8;
+    color: white;
+    border: #00b4d8 solid;
+    transition: 0.4s;
+}
+/* ===== Gym Locator Search =====  */
+
+
+/* ==== Card area to promote other areas of webpagee ==== */
+
+/* Main Container Div */
+.cardArea {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+/* * v Could have made one class for the cards! v* */
+/* Left Card */
+.lCard {
+    background-color: #6c757d; 
+    padding: 20px;
+    width: 25%;
+    border: 15px solid #145c8c;
+    border-radius: 10px ;
+    background-color: #155580;
+    height: 550px;
+}
+
+/* Middle Card */
+.mCard {
+    background-color: #6c757d; 
+    padding: 20px;
+    width: 25%;
+    border: 15px solid #145c8c;
+    border-radius: 10px ;
+    background-color: #155580;
+    height: 550px;   
+}
+
+/* Right Card */
+.rCard {
+    background-color: #6c757d;
+    padding: 20px;
+    width: 25%;
+    border: 15px solid #145c8c;
+    border-radius: 10px ;
+    background-color: #155580;
+    height: 550px;   
+}
+
+/* Images inside the cards */
+.imgCard {
+    width: 480px;
+    height: 270px;
+}
+
+/* Button at the bottom of the cards */
+.linkButton {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.cardButton {
+    width: 250px;
+    height: 50px;
+    background-color: #6c757d;
+    border: 0px transparent;
+    font-family: 'Sora', sans-serif;
+    font-size: 20px;
+}
+ 
+.cardButton:hover {
+    background-color: #00b4d8;
+    border: solid #00b4d8;
+    transition: 0.4s;
+    color: white;
+}
+/* Button at the bottom of the cards */
+/* ==== Card area to promote other areas of webpagee ==== */
+
+
+/* ==== Footer information ==== */
+
+/* A container that controls the colors background and width of footer */
+#ftInfo {
+    width: 100%;
+    background-color: #155580;
+}
+
+/* Container that holds the main footer */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 95%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}    
+
+/* Links to other sectors of website */
+.sec1 { 
+    width: 23.75%;
+    margin-left: 30px;
+}
+
+.sec2 {
+    width: 23.75%;
+}   
+
+.footLinks {
+    text-decoration: none; 
+    color: white;
+}
+
+.footLinks:hover {
+    color: #00b4d8;
+    border: #00b4d8 solid;
+    transition: 1s;
+}
+/* Links to other sectors of website */
+
+/* All social media links for gym */
+.sec3 {
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    margin-top: -5px;
+}
+
+/* Social media links customization */
+.fa {
+    padding: 15px;
+    font-size: 30px !important; 
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.fa-facebook {
+    background-color: #4267B2;
+    color: white;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);;  
+    color: white;
+}
+
+.fa-twitter {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+.fa-youtube {
+    background-color: white;
+    color: red;
+}
+
+.fa:hover {
+    border-radius: 20px;
+    transition: 0.5s;
+    transform: translateY(-10px) rotate(1turn);
+}
+/* Social media links customization */
+
+/* Copyright Area */
+.crInfo {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    border-top: 10px solid gray;
+}
+
+
